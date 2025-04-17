@@ -10,7 +10,7 @@ import { Stars, OrbitControls } from "@react-three/drei";
 
 function StarfieldBackground() {
   return (
-    <Canvas className="absolute inset-1 z-1">
+    <Canvas className="absolute inset-0 z-0">
       <Stars
         radius={130} // radius of the inner sphere
         depth={10} // depth of area where stars appear
@@ -18,7 +18,7 @@ function StarfieldBackground() {
         factor={5} // size factor of stars
         saturation={0.5}
         speed={2}
-        color="#fffff" // This will change the star color to a tomato red
+        color="#ffffff" // Change star color to white for better visibility
       />
       <OrbitControls enableZoom={false} enablePan={false} autoRotate />
     </Canvas>
@@ -27,9 +27,9 @@ function StarfieldBackground() {
 
 function Footer() {
   return (
-    <footer className="relative bg-[#0f172a] text-gray-300 py-10 px-6 overflow-hidden">
+    <footer className="relative bg-black border-b-2 border-t-2 text-gray-300 py-10 px-6 overflow-hidden">
       {/* Animated Starfield */}
-      <div className="absolute inset-2 opacity-10 pointer-events-none">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
         <StarfieldBackground />
       </div>
 
