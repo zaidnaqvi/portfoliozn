@@ -35,4 +35,5 @@ const CursorFollower = () => {
   );
 };
 
+
 export default CursorFollower;
